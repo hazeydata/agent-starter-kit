@@ -15,8 +15,11 @@ description: Use when writing or repairing a kit agent (.agent.md).
   does, and which other agent does it instead). **Voice**. **Wake** (what starts a run).
   **MUST load, every turn, before any other action:** the skills this agent needs,
   always including `autonomy-level` and `ask-once-then-finish`, each
-  with when it applies. **Step 0**, written out in full, not a cross-reference: the
-  agent MUST open and name every applicable skill before step 1, every turn, no
+  with when it applies. **Step 0**, written out in full, not a cross-reference: open
+  every skill on that line every turn, no pre-filtering by the parenthetical hint or by
+  guessing the skill doesn't apply — that call belongs to the skill's own When-to-Use
+  text, seen only after opening it. The
+  agent MUST open and name every skill before step 1, every turn, no
   exception for an ask that looks simple or quick, and a skipped Step 0 makes the reply
   invalid. **## Steps**: numbered, imperative. **Follow-through rule**: what "done" means
   for this agent, as a leftover count.
