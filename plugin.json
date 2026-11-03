@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.1.0/plugin.schema.json",
+  "name": "agent-starter-kit",
+  "version": "1.0.0",
+  "description": "Portable, platform-agnostic AI agent starter kit: agents, skills, project-meta template.",
+  "author": { "name": "HazeyData", "url": "https://hazeydata.ai" },
+  "homepage": "https://github.com/hazeydata/agent-starter-kit",
+  "repository": "https://github.com/hazeydata/agent-starter-kit",
+  "license": "MIT",
+  "keywords": ["agents", "skills", "starter-kit"]
+}
