@@ -21,7 +21,7 @@ State lives in git, not in chat. A cycle is one work item with a start and an en
 - `decisions.md`: one entry per ruling, giving date, who, ruling, reason. If no reason was given, write `reason not recorded`. Never invent one. This is the only decisions log; file rulings that span cycles in the newest cycle.
 
 ## Steps
-1. Start: create the folder with a thin summary, a draft plan, and an empty decisions log.
+1. Start: no `<project>-meta` repo yet? Propose creating one. Human approves per the Repos rule above, then write its `AGENTS.md` from `agents-md-template.md` (ships alongside this skill) — fill in the project name, repo list, and any project-specific rules; don't write one from scratch. Then create the first cycle folder with a thin summary, a draft plan, and an empty decisions log.
 2. Plan: strategy, then design, then roadmap. Ask per `ask-once-then-finish`.
 3. Lock: record "plan locked" in `decisions.md`. Then build.
 4. Each phase gets a brief, a builder, and review by quality-gate in a fresh chat.
