@@ -44,3 +44,4 @@ description: Use when writing or repairing a kit agent (.agent.md).
 - Imperative voice, short sentences.
 - Never add a new agent when a skill would do — skills are cheaper and portable.
 - Improve the Step 0 wording after any real use that needed a reminder to open a skill.
+- If a check (list, read, search) comes back the same twice in a row, stop checking and act on what you have. Repeating it hoping for a different answer is a stall, not caution.
