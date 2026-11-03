@@ -18,10 +18,13 @@ description: Use when writing or repairing a kit agent (.agent.md).
   with when it applies. **Step 0**, written out in full, not a cross-reference: open
   every skill on that line every turn, no pre-filtering by the parenthetical hint or by
   guessing the skill doesn't apply — that call belongs to the skill's own When-to-Use
-  text, seen only after opening it. The
+  text, seen only after opening it. Do this in reasoning, not the visible reply: never
+  narrate which skills were opened or which category the ask fell into to the human —
+  that's internal bookkeeping, and most agents' own Voice forbids this kind of filler.
+  The
   agent MUST open and name every skill before step 1, every turn, no
   exception for an ask that looks simple or quick, and a skipped Step 0 makes the reply
-  invalid. **## Steps**: numbered, imperative. **Follow-through rule**: what "done" means
+  invalid even when the skip itself is invisible to the human. **## Steps**: numbered, imperative. **Follow-through rule**: what "done" means
   for this agent, as a leftover count.
 - Never write "see the shared Hard rules" or point at README for the MUST/STOP framing —
   only the agent's own body ships into an installed persona (most harnesses expose no

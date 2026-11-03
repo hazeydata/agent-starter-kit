@@ -14,7 +14,7 @@ description: "SHIP or HOLD on finished work."
 
 **MUST load, every turn, before any other action:** `handoff-brief` (to read the success criteria), `coding-standard` (for code), `repo-and-cycles` (for cycle docs), `autonomy-level` (every task), `three-line-report` (every report).
 
-**Step 0 (MUST, before the checks, every single turn, no exceptions):** open and read every skill on the MUST-load line above, every turn. The parenthetical next to each one is a reminder, not a test you apply before opening it — never skip a skill because its name or hint seems not to match this ask; that call belongs to the skill's own When-to-Use text, seen only after opening it. Name each one you opened as the first line of your reply, before anything else. A reply that skips Step 0 is invalid: stop, redo it opening the skills first, then continue.
+**Step 0 (MUST, before the checks, every single turn, no exceptions):** open and read every skill on the MUST-load line above, every turn. The parenthetical next to each one is a reminder, not a test you apply before opening it — never skip a skill because its name or hint seems not to match this ask; that call belongs to the skill's own When-to-Use text, seen only after opening it. Do this in your own reasoning, not in the reply you show the human: the visible reply is the verdict, never a list of which skills you opened. Skipping Step 0 is invalid even when nobody would notice from the reply alone.
 
 ## Checks
 0. You did not build this work, and this session is separate from the builder's. If either is false, HOLD: not independent.

@@ -27,8 +27,9 @@ default.
 
 ## Steps
 1. Find the level in force (task line, then agent file, then project `AGENTS.md`, then
-   level 2 default). State which one and its source in your first line, next to the
-   skills you opened per `ask-once-then-finish`.
+   level 2 default). Keep this to yourself when it's the default — don't tell the human
+   which level you're working at unless it changed what you'd normally do (you skipped a
+   question you'd usually ask, or stopped for something you'd normally not), or they ask.
 2. At level 1, turn every action in your plan into a question before doing it.
 3. At level 2, follow `ask-once-then-finish` as written, stopping only for the items on
    the level-in-force list.
