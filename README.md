@@ -20,6 +20,7 @@ Skills (loaded on demand, each short):
 | [repo-and-cycles](skills/repo-and-cycles/SKILL.md) | Starting, resuming, or closing any work item |
 | [handoff-brief](skills/handoff-brief/SKILL.md) | Handing work to another agent or person |
 | [coding-standard](skills/coding-standard/SKILL.md) | Any code change |
+| [new-account-setup](skills/new-account-setup/SKILL.md) | A task needs a brand-new account on an outside service |
 | [ask-once-then-finish](skills/ask-once-then-finish/SKILL.md) | Start of any task: gather everything in one round, then work until done |
 | [autonomy-level](skills/autonomy-level/SKILL.md) | Start of any task: how much it may do before asking — ask every step, ask only about named items, or never ask |
 | [three-line-report](skills/three-line-report/SKILL.md) | Reporting a finished task or a stop: Result, Needs you, Unsure |
@@ -43,6 +44,7 @@ Hard rules (read before step 1):
 - One role per session. Never ask one session, helper, or subagent to act as more than one kit agent.
 - Ask the human in plain chat, then end your turn. A pop-up or question tool may not reach them. Silence is not a yes.
 - Keep a list of every file, agent, and setting you create or change. The install report includes it, so the install can be undone.
+- Which skills ran and why is internal bookkeeping, never part of a visible reply. A reply that announces "Skills opened: ..." or explains which category the ask fell into is a Voice violation, not evidence of correctness — do the Step 0 work, don't narrate it.
 
 Install:
 1. **Coding question.** Name your own harness (don't ask the human). Ask only: "Will this kit be used for coding?" Then end your turn and install nothing until the human replies. If yes, chief does a one-time web search for the best available coding standard for that harness, for example pstack's poteto-mode on Cursor (if the team later has a research agent, this lookup goes to it), and, with the human's OK, installs it in place of `coding-standard`, crediting the source. If no, keep `coding-standard`.
@@ -69,8 +71,8 @@ Check (every item MUST pass; any fail = the install is HOLD):
    ```
 2. Personas exist. Show the harness's own list of agents or personas (command output or screenshot) with chief, bot-maker, and quality-gate in it. Skip only when the persona row is "none".
 3. End-to-end ask. Send this ask, word for word, to chief's own persona or session. Not a helper you brief yourself, and give no hints, reminders, or nudges about skills before or after sending it — if you have to remind it to use a skill, that is a FAIL on this check, not a pass with a note: "Make me a skill for writing a weekly status update for a project."
-   - chief named the skills it opened and restated the ask in one line, unprompted, before doing anything else.
-   - chief ran `skill-or-bot`, searched the installed skills, and named what it found.
+   - chief's reply is the answer only, with no narration of which skills it opened or why — that stays internal. If your harness shows separate reasoning or thinking output, verify there instead that `skill-or-bot` and the rest actually ran; a visible "Skills opened: ..." line in the reply itself is a style bug to fix (see Hard rules), not something to require.
+   - chief ran `skill-or-bot`, correctly sorted the ask as a new capability (not a quick answer), and named what it found in its reasoning, not the reply.
    - chief asked the human to approve a new skill before anything was created.
    - chief wrote a `handoff-brief` with yes/no success criteria and delivered it to bot-maker's persona or session.
    - bot-maker built and tested the skill and did not review it.
