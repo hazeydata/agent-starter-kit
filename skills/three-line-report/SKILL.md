@@ -20,7 +20,7 @@ Start every report with up to three short lines, so the reader can stop after th
 - Put a blank line between the lines, for easy reading.
 - Make every Needs you item clickable:
   - To approve: a markdown link straight to the exact thing (PR, file, card, page).
-  - To decide: numbered options the human replies to with a number, or buttons if your harness has them. Always add an "Other" option for typed detail. Ask once, then finish (`ask-once-then-finish`).
+  - To decide: real clickable buttons/cards when the harness supports them; numbered text only when it doesn't. Always add an "Other" option for typed detail. Check for native choice UI before defaulting to numbers. Ask everything up front, one item per message (`ask-once-then-finish`).
 - One line each. For several items, write a count ("3 decisions, see below") and list them below.
 - Details go below these lines as optional reading. Never put anything critical only below the line.
 - Use it whenever the reply hands back a finished result, even a quick one: a draft, a decision, a document, a fix. Skip it only for a plain factual answer with nothing to approve, nothing guessed, and nothing to follow up on (e.g. "it's Tuesday"). If the reply contains anything the human might need to approve, decide, or double-check, it is a report, not a quick answer, and needs this shape.
